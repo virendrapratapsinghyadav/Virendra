@@ -7,6 +7,8 @@ import MyStack from '../../components/StackIcons/MyStack'
 import Card1 from '../../components/ProjectCard/Card1.JSX'
 import Gallery from '../../components/GalleryCard/Gallery'
 import About from '../About/About'
+import Card2 from '../../components/ProjectCard/Card2'
+import ProjectSection from '../ProjectSection/ProjectSection'
 
 const Home = () => {
   return (
@@ -47,6 +49,8 @@ const Home = () => {
       </div> */}
 
       {/* <About/> */}
+
+      <ProjectSection/>
 
     </div>
   )
