@@ -25,7 +25,7 @@ const ContactCard = () => {
 
 
     return (
-        <div  onClick={handleCopy} className='cursor-pointer'>
+        <div  onClick={handleCopy} className='cursor-pointer h-fit'>
                 {
                     copied ? (
                         <div>
