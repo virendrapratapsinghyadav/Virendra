@@ -2,29 +2,29 @@ import React from 'react'
 import companyLogo from '../../assets/images/company.png'
 import Btn from '../NonBtn/Btn'
 
-const Experience = () => {
+const Experience = ({icon,company,role,present,duration}) => {
     return (
-        <div className=' w-full flex justify-between items-center border border-red-500'>
+        <div className=' w-full flex justify-between items-center border border-red-500 px-2 rounded-md'>
 
             {/* Company & logo  */}
             <div className='flex items-center gap-3'>
                 {/* logo */}
-                <img src={companyLogo} alt="logo" className='h-[40px] w-[40px] m-2' />
+                <img src={icon} alt="logo" className='h-[40px] w-[40px] m-2 rounded-md' />
 
                 {/* name &role */}
                 <div>
-                    <div>Product Designer</div>
-                    <div>Visibuild</div>
+                    <div className='font-bold'>{role}</div>
+                    <div>{company}</div>
                 </div>
             </div>
 
             {/* time */}
             <div className='flex gap-2'>
+                {
+                    present?<Btn label={current}/>:""
+                }
                 <div>
-                    <Btn />
-                </div>
-                <div>
-                    <span>2024</span>-<span>present</span>
+                    {duration}
                 </div>
             </div>
 

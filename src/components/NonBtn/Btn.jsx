@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Btn = () => {
+const Btn = ({icon:Icon, label}) => {
   return (
-    <div className='bg-amber-200 rounded-md'>
-      Button
-    </div>
+    <>
+    <span className="flex items-center gap-1 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm font-medium">
+      {Icon && <Icon className='w-4 h-4'/>}
+      {label}
+    </span>
+    </>
   )
 }
 
