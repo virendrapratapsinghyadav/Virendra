@@ -5,6 +5,7 @@ import About from './pages/About/About'
 import Home from './pages/Home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ProjectSection from './pages/ProjectSection/ProjectSection'
+import ProjectDetail from './components/ProjectDetails/ProjectDetail'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,14 @@ const router = createBrowserRouter([
       {
         path:'projects',
         element:<ProjectSection/>
+      },
+      {
+        path:'/projectDetails',
+        element:<ProjectDetail/>
+      },
+      {
+        path:'/project/:id',
+        element:<ProjectDetail/>
       },
       {
         path:'/*',
