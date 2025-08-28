@@ -1,9 +1,16 @@
+import p1 from '../assets/images/p1.avif'
+import p2 from '../assets/images/p2.avif'
+import p3 from '../assets/images/p3.avif'
+import github from '../assets/images/github.jpeg'
+
+
+
 const Data =[
   {
     id: '1',
     heading: 'Revolutionising WhatsApp Collaboration with Meetup',
     subHeading: 'UX Case Study',
-    image: '/assets/images/project1.jpg',
+    image: p1,
     duration: '12 Weeks',
     role: 'Sole UX/UI Designer',
     link:'',
@@ -15,7 +22,7 @@ const Data =[
     id: '2',
     heading: 'Converting an underperforming online store to a selling powerhouse',
     subHeading: 'Conversion Rate Optimisation',
-    image: '/assets/images/project1.jpg',
+    image: p2,
     duration: '6 Months',
     role: 'Junior Product Designer',
     link:'',
@@ -27,7 +34,7 @@ const Data =[
     id: '3',
     heading: 'Relaunching Coachbase to the World',
     subHeading: 'UX Case Study',
-    image: '/assets/images/project2.jpg',
+    image: p3,
     duration: '6 Weeks',
     role: 'UX Designer, Copywriter',
     link:'',
@@ -38,7 +45,7 @@ const Data =[
     id: '4',
     heading: 'Checkout Projects',
     subHeading: 'Frontend Development',
-    image: '/assets/images/project2.jpg',
+    image: github,
     duration: '3 Months',
     role: 'Reactjs Developer',
     link:'',
@@ -51,7 +58,7 @@ Use of Tailwind CSS for fast and scalable UI styling
 A solid foundation in vanilla JavaScript and DOM manipulation
 An evolving path toward full-stack development (MERN)
 In the coming months, you can expect to see backend integration, API development, and full-stack apps added to this repository. I'm also open to feedback, collaboration, and learning from the developer community.
-Thanks for visiting!  
+Thanks for visiting!`  
 },
 
 

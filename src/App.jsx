@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ProjectSection from './pages/ProjectSection/ProjectSection'
 import ProjectDetail from './components/ProjectDetails/ProjectDetail'
+import DetailPage from './pages/DetailPage/DetailPage'
 
 const router = createBrowserRouter([
   {
@@ -25,12 +26,8 @@ const router = createBrowserRouter([
         element:<ProjectSection/>
       },
       {
-        path:'/projectDetails',
-        element:<ProjectDetail/>
-      },
-      {
         path:'/project/:id',
-        element:<ProjectDetail/>
+        element:<DetailPage/>
       },
       {
         path:'/*',

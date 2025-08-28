@@ -4,7 +4,7 @@ import p1 from '../../assets/images/p1.avif'
 const Card2 = ({icon, heading, description}) => {
   return (
     <div className='m-2 p-1'>
-      <a href="">
+      
 
         <div className='flex justify-between'>
           {/* image */}
@@ -21,7 +21,7 @@ const Card2 = ({icon, heading, description}) => {
         </div>
         </div>
 
-      </a>
+      
     </div>
   )
 }
