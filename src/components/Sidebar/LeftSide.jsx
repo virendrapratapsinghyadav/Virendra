@@ -6,11 +6,11 @@ import { FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 const LeftSide = () => {
     return (
         <div>
-            <div className="h-screen w-64 flex flex-col justify-between border-r bg-white p-6">
+            <div className="min-h-screen w-64 flex flex-col justify-between border-r bg-[rgb(247,247,247)] p-6">
                 <div>
                     <div className="mb-8">
                         <div className="mb-8 flex items-center gap-4">
-                            <div className="w-20 h-20 rounded-full bg-gray-300 mb-4"><img className=" mb-4 w-20 h-20 rounded-full object-cover" src={profile} alt="" /></div>
+                            <div className="w-20 h-20 rounded-full bg-[rgb(247,247,247)] mb-4"><img className=" mb-4 w-20 h-20 rounded-full object-cover" src={profile} alt="" /></div>
                             <div className='mb-3'>
                                 <h1 className="text-xl font-bold">Virendra</h1>
                                 <p className="text-gray-600 text-xs">Software Developer</p>

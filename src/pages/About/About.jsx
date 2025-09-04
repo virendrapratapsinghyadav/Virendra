@@ -9,7 +9,7 @@ import schoolofrock from '../../assets/images/schoolofrock.jpg'
 import galgotia from '../../assets/images/galgotia.jpg'
 import bethel from '../../assets/images/BethelAcademy.png'
 import maharishi from '../../assets/images/MaharishiVidyaMandir.jpg'
-import { MapPin, Briefcase, Plane, MoveUpRight, FileText, Layers, Smartphone, Grid } from "lucide-react";
+import {PlaneTakeoff, MapPin, Briefcase, Plane, MoveUpRight, FileText, Layers, Smartphone, Grid } from "lucide-react";
 
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
 
     const summaryTags = [
         {icon: Briefcase, label:"Contech"},
-        { label:"Over 2 years of experience"},
+        {label:"Over 2 years of experience"},
         {icon: MapPin, label:"Kanpur"},
         {icon: Plane, label:"Open to relocation"},
     ]
@@ -47,12 +47,14 @@ const About = () => {
 
 
     return (
-        <div className='w-full'>
+        <div className=' bg-[rgb(237,237,237)] p-0.5 rounded-xl '>
+            <div className='h-full py-3 px-5 bg-[rgb(247,247,247)] m-3 rounded-xl '>
 
             {/* Intro */}
+            
 
             {/* Top */}
-            <div className='flex justify-between items-center mt-3 p-2'>
+            <div className='flex justify-between items-center'>
                 <div className='flex gap-3'>
                     <div className=''>
                         <img src={profile} alt="" className='h-[64px] w-[64px] m-2 rounded-2xl'/>
@@ -64,61 +66,62 @@ const About = () => {
                 </div>
 
                 <div>
-                    <Btn/>
+                    <Btn icon={PlaneTakeoff} label={"Send me an Email"}/>
                 </div>
             </div>
 
             {/* Information */}
-            <div>
+            <div className='p-3 mb-2'>
                 <p>I desisgned and built my first product in 2013 when I was 20 year old - an iOS app for new students at my high school to help them settle in - ever since i've beeb obssessed with what I could create from noting.</p>
                 <p>When i'm not working. I am likely filling y cup with one of my many passsions, writing, reading, watching football, travelling or catching up on sleep.</p>
             </div>
-
+<hr className='border-t border-gray-300 opacity-30' />
 
             {/* Summary: */}
-            <div>
+            <div className='p-3 mb-2'>
                 <div className='text-xl'><h1>Summary </h1></div>
-                <div className='flex gap-10 px-2'>
+                <div className='flex gap-10 mt-1'>
                     {
                         summaryTags.map((tag, index)=>{
                             return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
                         })
                     }
                 </div>
-               
             </div>
+            <hr className='border-t border-gray-300 opacity-30' />
             
             {/* Specialising in: */}
-            <div >
+            <div className='p-3 mb-2'>
                 <div className='text-xl'><h1>Specialising in: </h1></div>
-                <div className='flex gap-10 px-2'>
+                <div className='flex gap-10 mt-1'>
                     {
                         specialisingTags.map((tag, index)=>{
                             return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
                         })
                     }
                 </div>
-                <hr/>
             </div>
 
+            <hr className='border-t border-gray-300 opacity-30' />
+
             {/* Experience */}
-            <div>
+            <div className='p-3 mb-2'>
                 <div className='text-xl'>
                     <h1>Experience</h1>
                 </div>
-                <div >
+                <div>
                     {
                         ExperienceList.map((tag, index)=>{
                             return(
-                                <>
-                                <Experience key={index} icon={tag.icon} role={tag.role} company={tag.company} present={tag.present} duration={tag.duration}/>
-                                </>
+                                <div key={index}>
+                                <Experience  icon={tag.icon} role={tag.role} company={tag.company} present={tag.present} duration={tag.duration}/>
+                                </div>
                             )
                         })
                     }
                 </div>
                 <a className=''>
-                    <div className='flex justify-between items-center bg-gray-300 rounded-md m-1 px-2 '>
+                    <div className='flex justify-between items-center ml-4 mb-2 px-2 hover:bg-[rgb(241,241,241)]'>
                         <div className='flex gap-2 items-center'>
                         <FileText className="w-4 h-4"/>
                         <p>Read my entire CV</p>
@@ -129,9 +132,10 @@ const About = () => {
                     </div>
                 </a>
             </div>
+            <hr className='border-t border-gray-300 opacity-30' />
 
             {/* Education */}
-            <div>
+            <div className='p-3 mb-2'>
                 <div className='text-xl'>
                     <h1>Education</h1>
                 </div>
@@ -145,6 +149,7 @@ const About = () => {
                     }
                 </div>
             </div>
+        </div>
         </div>
     )
 }

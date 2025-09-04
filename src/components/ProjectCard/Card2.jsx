@@ -1,29 +1,30 @@
 import React from 'react';
-import p1 from '../../assets/images/p1.avif'
 
-const Card2 = ({icon, heading, description}) => {
+const Card2 = ({ icon, heading, description }) => {
   return (
-    <div className='m-2 p-1'>
-      
+    <div className='m-2 p-1 border rounded-lg overflow-hidden transform hover:scale-90 transition-transform duration-300'>
 
-        <div className='flex justify-between'>
-          {/* image */}
-        
-          <img src={icon} alt="" className='h-[200px] w-[500px] rounded-xl'/>
-        
+      <div className='flex'>
 
-        {/* Overview */}
-        <div>
-          <h1 className='text-xl font-bold'>{heading}</h1>
-          <p>
-            {description}
-          </p>
-        </div>
+        {/* Image container */}
+        <div className='flex-1'>
+          <img
+            src={icon}
+            alt="ProjectImage"
+            className='h-full w-full object-cover rounded-xl'
+          />
         </div>
 
-      
+        {/* Text container */}
+        <div className='flex-1 p-6 flex flex-col justify-center'>
+          <h1 className='text-xl font-bold mb-2'>{heading}</h1>
+          <p>{description}</p>
+        </div>
+
+      </div>
+
     </div>
-  )
+  );
 }
 
-export default Card2
+export default Card2;

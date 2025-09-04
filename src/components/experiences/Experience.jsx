@@ -4,7 +4,7 @@ import Btn from '../NonBtn/Btn'
 
 const Experience = ({icon,company,role,present,duration}) => {
     return (
-        <div className=' w-full flex justify-between items-center border border-red-500 px-2 rounded-md'>
+        <div className=' w-full flex justify-between items-center  px-2 rounded-md my-2'>
 
             {/* Company & logo  */}
             <div className='flex items-center gap-3'>
@@ -27,6 +27,10 @@ const Experience = ({icon,company,role,present,duration}) => {
                     {duration}
                 </div>
             </div>
+
+            {/* Light horizontal line */}
+            
+
 
         </div>
     )
