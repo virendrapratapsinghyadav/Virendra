@@ -29,7 +29,7 @@ const Gallery = () => {
     return (
         <div className=''>
 
-            <div className='relative  w-[350px] overflow-hidden group'>
+            <div className='relative w-full overflow-hidden group '>
 
                 {/* flowerLogo */}
                 <div className=' absolute top-2 right-2 h-[44px] w-[44px] '>
@@ -46,7 +46,7 @@ const Gallery = () => {
 
                 {/* ImageSelector */}
                 <div className='flex justify-center'>
-                    <div className='absolute bottom-0  w-[250px] py-2 flex justify-around align-middle text-black bg-neutral-400 text-2xl opacity-0 group-hover:opacity-100  rounded-4xl group-hover:-translate-y-4 transition-all duration-300 ease-in gap-0'>
+                    <div className='absolute bottom-0 w-[250px]  py-2 flex justify-around align-middle text-black bg-neutral-400 text-2xl opacity-0 group-hover:opacity-100  rounded-4xl group-hover:-translate-y-4 transition-all duration-300 ease-in gap-0'>
                     {iconActions.map((item, idx)=>(
                         <button
                         key={idx}

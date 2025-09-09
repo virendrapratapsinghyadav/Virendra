@@ -1,12 +1,15 @@
 import React from 'react'
 import profile from '../../assets/profile.png';
+import { NavLink } from 'react-router-dom';
+import { MousePointerClick, UserRound, House } from 'lucide-react';
 import { FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+
 
 
 const LeftSide = () => {
     return (
         <div>
-            <div className="min-h-screen w-64 flex flex-col justify-between border-r bg-[rgb(247,247,247)] p-6">
+            <div className="min-h-screen w-64 flex flex-col justify-between bg-[rgb(247,247,247)] p-6">
                 <div>
                     <div className="mb-8">
                         <div className="mb-8 flex items-center gap-4">
@@ -19,38 +22,38 @@ const LeftSide = () => {
                         <div>
                             <nav className="space-y-2 mb-8 ">
                                 <div className="block  shadow-md font-mono text-shadow-xs text-gray-800 hover:text-blue-600 px-3 py-1 rounded-lg border border-gray-300 hover:bg-gray-100">
-                                    <a href="/" >
-                                        Home
-                                    </a>
+                                    <NavLink to='/' className='flex gap-1 items-center'>
+                                        <House />Home
+                                    </NavLink>
                                 </div>
                                 <div className="block  shadow-md font-mono text-shadow-xs text-gray-800 hover:text-blue-600 px-3 py-1 rounded-lg border border-gray-300 hover:bg-gray-100">
-                                    <a href="/projects" >
-                                        Projects
-                                    </a>
+                                    <NavLink to='/projects' className='flex gap-1 items-center'>
+                                       <MousePointerClick/> Projects
+                                    </NavLink>
                                 </div>
                                 <div className="block  shadow-md font-mono text-shadow-xs text-gray-800 hover:text-blue-600 px-3 py-1 rounded-lg border border-gray-300 hover:bg-gray-100">
-                                    <a href="/about" >
-                                        About Me
-                                    </a>
+                                    <NavLink to='/about' className='flex gap-1 items-center'>
+                                       <UserRound/> <p>About me</p>
+                                    </NavLink>
                                 </div>
                             </nav>
                         </div>
 
-                        <div>
+                        <div className='ml-2'>
                             <div>
-                                <p className="font-semibold mb-2">social</p>
+                                <p className="font-semibold mb-2">Social</p>
                             </div>
 
                             <div className="space-y-2 text-sm">
-                                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 rounded-md hover:bg-gray-100">
+                                <NavLink to="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 rounded-md hover:bg-gray-100">
                                     <FaLinkedin /> LinkedIn
-                                </a>
-                                <a href="https://twitter.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 rounded-md hover:bg-gray-100">
+                                </NavLink>
+                                <NavLink to="https://twitter.com"  target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 rounded-md hover:bg-gray-100">
                                     <FaTwitter /> X (Twitter)
-                                </a>
-                                <a href="mailto:your@email.com" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md pr-2">
+                                </NavLink>
+                                <NavLink to="mailto:your@email.com" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md pr-2">
                                     <FaEnvelope /> Email Me
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

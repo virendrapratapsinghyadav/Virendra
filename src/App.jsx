@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ProjectSection from './pages/ProjectSection/ProjectSection'
 import ProjectDetail from './components/ProjectDetails/ProjectDetail'
 import DetailPage from './pages/DetailPage/DetailPage'
+import Grid from './pages/Grid/Grid'
+
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
     children:[
       {
         index: true,
-        element:<Home/>
+        element:<Grid/>
       },
       {
         path:'about',
