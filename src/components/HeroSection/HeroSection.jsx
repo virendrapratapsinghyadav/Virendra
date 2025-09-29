@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 const HeroSection = () => {
   return (
     <div>
-      <div className='flex flex-col space-y-0.5'>
+      <div className='flex flex-col space-y-0.5 '>
 
         {/* top */}
         <div>
@@ -31,9 +31,9 @@ const HeroSection = () => {
 
 
         {/* bottom */}
-        <div className='text-[rgb(107,107,115)] text-base space-y-2 pb-2'>
-            <p className=''>I'm a software developer who brings clarity to complex problems. I design intutitve, elegant interfaces that make technology feel human.</p>
-            <p className=''>With over 2 years of experience in website design and a knack for smooth interactions, I'm an asset to any team.</p>
+        <div className='text-[rgb(107,107,115)] text-base space-y-2 pb-1'>
+            <p className=''>I’m a Computer Science graduate diving into the full-stack world—JavaScript, React, Node.js, and everything in between. I enjoy taking ideas from scratch and shaping them into interactive apps.</p>
+            <p className=''>Currently, I’m leveling up my problem-solving skills through DSA, learning and practicing on my own to build a strong foundation before stepping into the professional world.</p>
             <p className=''>My focus is on building experiences that move that needle and drive business outcomes. Click around and enjoy my corner of the internet!</p>
         </div>
 

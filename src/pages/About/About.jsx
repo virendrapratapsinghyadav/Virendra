@@ -17,17 +17,14 @@ const About = () => {
 
 
     const summaryTags = [
-        {icon: Briefcase, label:"Contech"},
-        {label:"Over 2 years of experience"},
+        {icon: Briefcase, label:"Open to entry-level roles"},
         {icon: MapPin, label:"Kanpur"},
         {icon: Plane, label:"Open to relocation"},
     ]
 
     const specialisingTags = [
-        {icon: Layers, label:"Growth design"},
-        {label:"Design systems"},
-        {icon: Smartphone, label:"Mobile UI"},
-        {icon: Grid, label:"B2B software"},
+        {icon: Layers, label:"Problem Solving"},
+        {icon: Grid, label:"Web Apps"},
     ]
 
     const ExperienceList = [
@@ -72,8 +69,9 @@ const About = () => {
 
             {/* Information */}
             <div className='p-3 mb-2'>
-                <p>I desisgned and built my first product in 2013 when I was 20 year old - an iOS app for new students at my high school to help them settle in - ever since i've beeb obssessed with what I could create from noting.</p>
-                <p>When i'm not working. I am likely filling y cup with one of my many passsions, writing, reading, watching football, travelling or catching up on sleep.</p>
+                <p className='my-1'>I’m a curious developer who loves turning ideas into web apps. My journey started with small coding problems and a lot of tutorials, but every project I built—whether it’s a weather app, a Trello-style board, or an image gallery—pushed me a step closer to becoming a real builder.</p>
+                <p className='my-1'>Right now, I’m sharpening my frontend skills, experimenting with backend features, and trying to level up as a full-stack dev. I’m not an expert (yet), but I enjoy figuring things out, breaking stuff, and learning along the way.</p>
+                <p className='my-1'>When I’m not coding, I’m probably geeking out on new tech tools, or just vibing with music.</p>
             </div>
 <hr className='border-t border-gray-300 opacity-30' />
 
