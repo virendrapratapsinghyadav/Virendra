@@ -2,10 +2,10 @@ import React from 'react'
 import Experience from '../../components/experiences/Experience'
 import Btn from '../../components/NonBtn/Btn'
 import profile from '../../assets/profile.png'
-import visibuild from '../../assets/images/visibuild.png'
-import cheil from '../../assets/images/cheil.jpeg'
-import bmc from '../../assets/images/bmc.png'
-import schoolofrock from '../../assets/images/schoolofrock.jpg'
+import visibuild from '../../assets/images/pasteApp-logo.png'
+import cheil from '../../assets/images/sparkboard-logo.png'
+import bmc from '../../assets/images/DC.png'
+import schoolofrock from '../../assets/images/movieInfo-logo.png'
 import galgotia from '../../assets/images/galgotia.jpg'
 import bethel from '../../assets/images/BethelAcademy.png'
 import maharishi from '../../assets/images/MaharishiVidyaMandir.jpg'
@@ -28,16 +28,16 @@ const About = () => {
     ]
 
     const ExperienceList = [
-        {icon:visibuild, company:"Visibuild", role:"Product Designer", present:"", duration:"2024-present"},
-        {icon:cheil, company:"Cheil Worldwide-Samsung", role:"Junior UX Designer", present:"", duration:"2022-2024"},
-        {icon:bmc, company:"Ben M Creative", role:"Freelance Web Designer", present:"", duration:"2020"},
-        {icon:schoolofrock, company:"School of Rock Australia", role:"Digital Designer", present:"", duration:"2021-2022"},
+        {icon:visibuild, company:"ReactJs, TailwindCSS, MongoDB, NodeJs, ExpressJs, Cloudinary", role:"Paste App", present:"", duration:"2024-present"},
+        {icon:cheil, company:"OpenAI GPT-4 API, MongoDB, NodeJs, ExpressJs", role:"SparkBoard", present:"", duration:""},
+        {icon:bmc, company:"Frontend, Backend", role:"Developer Community App", present:"", duration:""},
+        {icon:schoolofrock, company:"ReactJs, TailwindCSS, Axios", role:"MovieInfo", present:"", duration:""},
     ]
 
     const EducationList = [
-        {icon:galgotia, company:"Galgotia College", role:"Btech", present:"", duration:"2025"},
+        {icon:galgotia, company:"Galgotias College of Engineering and Technology", role:"Bachelor of Technology", present:"", duration:"2021 - 2025"},
         {icon:bethel, company:"Bethel Academy", role:"Intermediate", present:"", duration:"2020"},
-        {icon:maharishi, company:"Maharishi Vidya Mandir", role:"HighScool", present:"", duration:"2018"},
+        {icon:maharishi, company:"Maharishi Vidya Mandir", role:"High-School", present:"", duration:"2018"},
     ]
 
 
@@ -105,7 +105,7 @@ const About = () => {
             {/* Experience */}
             <div className='p-3 mb-2'>
                 <div className='text-xl'>
-                    <h1>Experience</h1>
+                    <h1>Project Experience</h1>
                 </div>
                 <div>
                     {

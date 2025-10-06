@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 //images
 import dog from '../../assets/images/dog.jpeg';
 import flower from '../../assets/images/flower.png';
-import profile from '../../assets/images/profile2.jpeg';
+import profile from '../../assets/images/profile2.jpg';
 import stadium from '../../assets/images/stadium.jpg';
-import location from '../../assets/images/location-port.jpg';
+import location from '../../assets/images/location.png';
 
 // icons
 import { VscAccount } from "react-icons/vsc";

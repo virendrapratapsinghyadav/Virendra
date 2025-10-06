@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../../assets/profile.png';
+import profile from '../../assets/profile1.png';
 import { NavLink } from 'react-router-dom';
 import { MousePointerClick, UserRound, House } from 'lucide-react';
 import { FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
