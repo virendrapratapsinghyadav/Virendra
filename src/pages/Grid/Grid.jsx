@@ -6,6 +6,7 @@ import BlogPreview from '../../components/BlogPreview/BlogPreview'
 import MyStack from '../../components/StackIcons/MyStack'
 import Card1 from '../../components/ProjectCard/Card1.JSX'
 import Gallery from '../../components/GalleryCard/Gallery'
+import CurrentReading from '../../components/CurrentlySection/CurrentReading'
 import About from '../About/About'
 import Card2 from '../../components/ProjectCard/Card2'
 import ProjectSection from '../ProjectSection/ProjectSection'
@@ -44,8 +45,8 @@ const Grid = () => {
         <Leetcode/>
       </div>
 
-      <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7">
-        <ContactCard />
+      <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7 hover:bg-blue-400  group transition-all duration-400">
+        <CurrentReading/>
       </div>
 
       <div className="col-span-2 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5">
