@@ -12,6 +12,11 @@ import Card2 from '../../components/ProjectCard/Card2'
 import ProjectSection from '../ProjectSection/ProjectSection'
 import DancePlayer from '../../components/Music/DancePlayer'
 import Leetcode from '../../components/Leetcode/Leetcode'
+import movie1 from '../../assets/images/movie1.png'
+import movie2 from '../../assets/images/movie2.png'
+import pasteHome from '../../assets/images/paste-home.png'
+import pasteAll from '../../assets/images/allPaste.png'
+import viewPaste from '../../assets/images/Viewpaste.png'
 
 const Grid = () => {
   return (
@@ -33,8 +38,8 @@ const Grid = () => {
         <BlogPreview />
       </div>
 
-      <div className="col-span-2 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5">
-        <BlogPreview />
+      <div className="col-span-2 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden">
+        <Card1 name = {"Paste Info"} img1 ={pasteAll} img2 ={pasteHome}/>
       </div>
 
       <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl cursor-pointer">
@@ -45,12 +50,12 @@ const Grid = () => {
         <Leetcode/>
       </div>
 
-      <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7 hover:bg-blue-400  group transition-all duration-400">
+      <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl hover:bg-blue-400  group transition-all duration-400">
         <CurrentReading/>
       </div>
 
-      <div className="col-span-2 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5">
-        <BlogPreview />
+      <div className="col-span-2 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden">
+        <Card1 name = {"Movies App for entertainment"} img1 ={movie1} img2 ={movie2}/>
       </div>
 
       <div className="col-span-4 row-span-1 shadow-2xl border border-amber-50 rounded-2xl  py-1 pb-1 px-2">

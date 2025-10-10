@@ -119,13 +119,15 @@ const About = () => {
                     }
                 </div>
                 <a className=''>
-                    <div className='flex justify-between items-center ml-4 mb-2 px-2 hover:bg-[rgb(241,241,241)]'>
+                    <div
+                    onClick={()=>{window.open('https://drive.google.com/file/d/1K1jZKSsUcyyou-2iJd_p_Xuk3WkyzGjj/view','_blank')}}
+                    className='group flex justify-between items-center rounded-md ml-4 mb-2 p-1 hover:bg-[rgb(227,227,227)] cursor-pointer'>
                         <div className='flex gap-2 items-center'>
                         <FileText className="w-4 h-4"/>
                         <p>Read my entire CV</p>
                         </div>
                         <div>
-                            <MoveUpRight className="w-4 h-4"/>
+                            <MoveUpRight className="w-4 h-4 rotate-0 transition-transform duration-300 group-hover:rotate-45"/>
                         </div>
                     </div>
                 </a>

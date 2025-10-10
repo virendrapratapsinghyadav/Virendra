@@ -45,13 +45,13 @@ const LeftSide = () => {
                             </div>
 
                             <div className="space-y-2 text-sm">
-                                <NavLink to="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 rounded-md hover:bg-gray-100">
+                                <NavLink to="https://www.linkedin.com/in/virendra-pratap-singh-yadav/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 rounded-md hover:bg-gray-100">
                                     <FaLinkedin /> LinkedIn
                                 </NavLink>
                                 <NavLink to="https://twitter.com"  target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 rounded-md hover:bg-gray-100">
                                     <FaTwitter /> X (Twitter)
                                 </NavLink>
-                                <NavLink to="mailto:your@email.com" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md pr-2">
+                                <NavLink to="mailto:virendrapratapsinghyadav2@gmail.com" className="flex items-center gap-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md pr-2">
                                     <FaEnvelope /> Email Me
                                 </NavLink>
                             </div>
@@ -61,7 +61,9 @@ const LeftSide = () => {
                 <div>
                     <div className="space-y-2">
                         <div>
-                            <button className="w-full px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-100">
+                            <button
+                            onClick={()=>{window.open('https://drive.google.com/file/d/1K1jZKSsUcyyou-2iJd_p_Xuk3WkyzGjj/view','_blank')}}
+                            className="w-full px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-100">
                                 Read my CV
                             </button>
                         </div>

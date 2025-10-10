@@ -28,10 +28,10 @@ const ContactCard = () => {
         <div  onClick={handleCopy} className='cursor-pointer h-fit'>
                 {
                     copied ? (
-                        <div>
+                        <div className='group'>
                             {/* svg */}
-                            <div className='text-[59px] text-[#6745FF] font-bold'>
-                                <p>{'\u{1F4E8}'}</p>
+                            <div className='text-[59px] text-[#6745FF] font-bold '>
+                                <p className='transition-transform duration-300 group-hover:-rotate-12 group-hover:-translate-y-7'>{'\u{1F4E8}'}</p>
                             </div>
 
                             {/* middle */}
