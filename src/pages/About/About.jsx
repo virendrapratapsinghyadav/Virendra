@@ -28,7 +28,7 @@ const About = () => {
     ]
 
     const ExperienceList = [
-        {icon:visibuild, company:"ReactJs, TailwindCSS, MongoDB, NodeJs, ExpressJs, Cloudinary", role:"Paste App", present:"", duration:"2024-present"},
+        {icon:visibuild, company:"ReactJs, Redux, TailwindCSS, MongoDB, NodeJs, ExpressJs, Cloudinary", role:"Paste App", present:"", duration:"2024-present"},
         {icon:cheil, company:"OpenAI GPT-4 API, MongoDB, NodeJs, ExpressJs", role:"SparkBoard", present:"", duration:""},
         {icon:bmc, company:"Frontend, Backend", role:"Developer Community App", present:"", duration:""},
         {icon:schoolofrock, company:"ReactJs, TailwindCSS, Axios", role:"MovieInfo", present:"", duration:""},
@@ -49,20 +49,19 @@ const About = () => {
 
             {/* Intro */}
             
-
             {/* Top */}
-            <div className='flex justify-between items-center'>
-                <div className='flex gap-3'>
+            <div className='flex flex-col justify-center items-center gap-3 lg:flex-row lg:justify-between lg:items-center'>
+                <div className='flex flex-col justify-center items-center lg:flex-row  lg:gap-3'>
                     <div className=''>
                         <img src={profile} alt="" className='h-[64px] w-[64px] m-2 rounded-2xl'/>
                     </div>
-                    <div  className='pt-3'>
-                        <p className='text-blue-500'>A Software developer with 2+years experience</p>
-                        <h1 className='text-xl font-bold'>Hi, I'm Virendra!</h1>
+                    <div  className=''>
+                        <p className='text-blue-500 text-center lg:text-start'>A Software developer with 2+years experience</p>
+                        <h1 className='text-md font-bold text-center lg:text-start lg:text-xl'>Hi, I’m Virendra Pratap Singh Yadav </h1>
                     </div>
                 </div>
 
-                <div>
+                <div className=''>
                     <Btn icon={PlaneTakeoff} label={"Send me an Email"}/>
                 </div>
             </div>
@@ -73,12 +72,12 @@ const About = () => {
                 <p className='my-1'>Right now, I’m sharpening my frontend skills, experimenting with backend features, and trying to level up as a full-stack dev. I’m not an expert (yet), but I enjoy figuring things out, breaking stuff, and learning along the way.</p>
                 <p className='my-1'>When I’m not coding, I’m probably geeking out on new tech tools, or just vibing with music.</p>
             </div>
-<hr className='border-t border-gray-300 opacity-30' />
+            <hr className='border-t border-gray-300 opacity-30' />
 
             {/* Summary: */}
             <div className='p-3 mb-2'>
                 <div className='text-xl'><h1>Summary </h1></div>
-                <div className='flex gap-10 mt-1'>
+                <div className='flex flex-col gap-2 mt-2 w-fit lg:flex-row lg:mt-1 lg:gap-10'>
                     {
                         summaryTags.map((tag, index)=>{
                             return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
@@ -91,7 +90,7 @@ const About = () => {
             {/* Specialising in: */}
             <div className='p-3 mb-2'>
                 <div className='text-xl'><h1>Specialising in: </h1></div>
-                <div className='flex gap-10 mt-1'>
+                <div className='flex flex-col gap-2 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-10'>
                     {
                         specialisingTags.map((tag, index)=>{
                             return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
@@ -99,7 +98,6 @@ const About = () => {
                     }
                 </div>
             </div>
-
             <hr className='border-t border-gray-300 opacity-30' />
 
             {/* Experience */}
@@ -127,7 +125,7 @@ const About = () => {
                         <p>Read my entire CV</p>
                         </div>
                         <div>
-                            <MoveUpRight className="w-4 h-4 rotate-0 transition-transform duration-300 group-hover:rotate-45"/>
+                            <MoveUpRight className="w-4 h-4 border rounded-3xl bg-white rotate-0 transition-transform duration-300 group-hover:rotate-45 group-hover:"/>
                         </div>
                     </div>
                 </a>

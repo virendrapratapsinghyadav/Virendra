@@ -14,12 +14,14 @@ const Experience = ({icon,company,role,present,duration}) => {
                 {/* name &role */}
                 <div>
                     <div className='font-bold'>{role}</div>
-                    <div>{company}</div>
+                    <div className='truncate max-w-[160px] sm:max-w-[200px] md:max-w-[500px] lg:max-w-full '>
+                        {company}
+                    </div>
                 </div>
             </div>
 
             {/* time */}
-            <div className='flex gap-2'>
+            <div className='hidden lg:block'>
                 {
                     present?<Btn label={current}/>:""
                 }

@@ -6,22 +6,25 @@ import flower from '../../assets/images/flower.png';
 import profile from '../../assets/images/profile2.jpg';
 import stadium from '../../assets/images/stadium.jpg';
 import location from '../../assets/images/location.png';
+import marine from '../../assets/images/marine.png'
+import onePiece from '../../assets/images/onePiece.png'
+
 
 // icons
 import { VscAccount } from "react-icons/vsc";
 import { FaRegHeart } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { MdPets } from "react-icons/md";
+import { GiAnchor } from "react-icons/gi";
 
 
 const Gallery = () => {
 
-    const [currentImage, setCurrentImage]= useState(dog);
+    const [currentImage, setCurrentImage]= useState(onePiece);
 
     const iconActions =[
         {icon:<VscAccount/>, img: profile},
-        {icon:<MdPets/>, img:dog},
-        {icon:<FaRegHeart/>, img:stadium},
+        {icon:<GiAnchor/>, img:marine},
+        {icon:<FaRegHeart/>, img:onePiece},
         {icon:<FaLocationDot/>, img:location},
     ]
 

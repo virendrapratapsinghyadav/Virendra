@@ -6,33 +6,26 @@ import { FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 
 
-const LeftSide = () => {
+const Hamburger = ({closeMenu}) => {
     return (
         <div>
-            <div className="min-h-screen w-64 flex flex-col justify-between bg-[rgb(247,247,247)] p-6 ">
+            <div className=" w-64 flex flex-col justify-between bg-[rgb(247,247,247)] p-6 ">
                 <div>
                     <div className="mb-8">
-                        <div className="mb-8 flex items-center gap-4">
-                            <div className="w-20 h-20 rounded-full bg-[rgb(247,247,247)] mb-4"><img className=" mb-4 w-20 h-20 rounded-full object-cover" src={profile} alt="" /></div>
-                            <div className='mb-3'>
-                                <h1 className="text-xl font-bold">Virendra</h1>
-                                <p className="text-gray-600 text-xs">Software Developer</p>
-                            </div>
-                        </div>
                         <div>
                             <nav className="space-y-2 mb-8 ">
                                 <div className="block  shadow-md font-mono text-shadow-xs text-gray-800 hover:text-blue-600 px-3 py-1 rounded-lg border border-gray-300 hover:bg-gray-100">
-                                    <NavLink to='/' className='flex gap-1 items-center'>
+                                    <NavLink to='/' onClick={closeMenu} className='flex gap-1 items-center'>
                                         <House />Home
                                     </NavLink>
                                 </div>
                                 <div className="block  shadow-md font-mono text-shadow-xs text-gray-800 hover:text-blue-600 px-3 py-1 rounded-lg border border-gray-300 hover:bg-gray-100">
-                                    <NavLink to='/projects' className='flex gap-1 items-center'>
+                                    <NavLink to='/projects' onClick={closeMenu}  className='flex gap-1 items-center'>
                                        <MousePointerClick/> Projects
                                     </NavLink>
                                 </div>
                                 <div className="block  shadow-md font-mono text-shadow-xs text-gray-800 hover:text-blue-600 px-3 py-1 rounded-lg border border-gray-300 hover:bg-gray-100">
-                                    <NavLink to='/about' className='flex gap-1 items-center'>
+                                    <NavLink to='/about' onClick={closeMenu}  className='flex gap-1 items-center'>
                                        <UserRound/> <p>About me</p>
                                     </NavLink>
                                 </div>
@@ -80,4 +73,4 @@ const LeftSide = () => {
     )
 }
 
-export default LeftSide
+export default Hamburger

@@ -20,45 +20,45 @@ import viewPaste from '../../assets/images/Viewpaste.png'
 
 const Grid = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-[250px_150px_200px_250px_230px]  gap-4 p-4 ">
+    <div className="grid grid-cols-4 grid-rows-[600px_200px_180px_180px_120px_230px_230px_150px_] md:grid-rows-[250px_auto] lg:grid-cols-4 lg:grid-rows-[auto_auto_200px_250px_230px]  gap-4 p-4 ">
       
-      <div className="col-span-2 row-span-2 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7">
+      <div className="col-span-4 md:col-span-4 md:row-span-2 lg:col-span-2 lg:row-span-2 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7  ">
         <HeroSection />
       </div>
 
-      <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl p-0 cursor-pointer">
+      <div className="hidden md:block md:col-span-2 md:h-[253px] lg:block lg:col-span-1 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl p-0 cursor-pointer">
         <Gallery />
       </div>
 
-      <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7">
+      <div className="col-span-4 row-span-1 md:col-span-2 md:h-[253px] lg:col-span-1 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7">
         <ContactCard />
       </div>
 
-      <div className="col-span-2 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5">
+      <div className="hidden md:block col-span-4 md:col-span-4  lg:col-span-2 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5">
         <BlogPreview />
       </div>
 
-      <div className="col-span-2 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden">
+      <div className="col-span-4 md:col-span-2 lg:col-span-2 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden">
         <Card1 name = {"Paste Info"} img1 ={pasteAll} img2 ={pasteHome}/>
       </div>
 
-      <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl cursor-pointer">
+      <div className=" col-span-4 md:col-span-2 lg:col-span-1 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl cursor-pointer">
         <MyStack/>
       </div>
 
-      <div className="col-span-1 row-span-2 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7">
+      <div className="col-span-4 md:col-span-2 md:row-span-1 lg:col-span-1 lg:row-span-2 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7">
         <Leetcode/>
       </div>
 
-      <div className="col-span-1 row-span-1 shadow-2xl border border-amber-50 rounded-2xl hover:bg-blue-400  group transition-all duration-400">
+      <div className="col-span-4 md:col-span-2 md: lg:col-span-1 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl hover:bg-blue-400  group transition-all duration-400">
         <CurrentReading/>
       </div>
 
-      <div className="col-span-2 row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden">
+      <div className="col-span-4 h-[250px] lg:col-span-2 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden">
         <Card1 name = {"Movies App for entertainment"} img1 ={movie1} img2 ={movie2}/>
       </div>
 
-      <div className="col-span-4 row-span-1 shadow-2xl border border-amber-50 rounded-2xl  py-1 pb-1 px-2">
+      <div className="hidden col-span-4 lg:block lg:col-span-4 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl  py-1 pb-1 px-2">
         <DancePlayer />
       </div>
 

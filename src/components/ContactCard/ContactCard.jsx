@@ -8,7 +8,7 @@ const ContactCard = () => {
     const [copied, setCopied] = useState(true);
 
     function copyText() {
-        const text = "Hello, clipboard someone want to contact you!";
+        const text = "Hello, Virendra someone want to contact you!";
         navigator.clipboard.writeText(text)
             .then(() => console.log("Copied!"))
             .catch(err => alert("Failed to copy"));
@@ -25,7 +25,7 @@ const ContactCard = () => {
 
 
     return (
-        <div  onClick={handleCopy} className='cursor-pointer h-fit'>
+        <div  onClick={handleCopy} className='cursor-pointer h-fit text-center'>
                 {
                     copied ? (
                         <div className='group'>
