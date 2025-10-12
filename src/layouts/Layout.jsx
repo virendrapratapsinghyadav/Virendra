@@ -1,13 +1,21 @@
 import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import LeftSide from "../components/Sidebar/LeftSide";
 import Hamburger from "../components/Sidebar/Hamburger";
+import Grid from "../pages/Grid/Grid";
+
 
 
 const Layout = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleClick =()=>{
+    navigate('/')
+  }
 
   const renderSidebar = () => (
     <div className="w-[260px] h-screen shrink-0 sticky top-0">
@@ -36,7 +44,7 @@ const Layout = () => {
           <div>
             {/* Header with hamburger icon */}
             <div className="flex items-center justify-between mt-2 mx-5 mb-3">
-              <div>
+              <div onClick={handleClick} className="cursor-pointer " >
                 <h1 className="text-2xl font-bold">Virendra</h1>
                 <p className="text-gray-600 text-xl">Software Developer</p>
               </div>
