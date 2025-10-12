@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 const HeroSection = () => {
   return (
     <div>
-      <div className='flex flex-col space-y-0.5 '>
+      <div className='flex flex-col space-y-0.5'>
 
         {/* top */}
         <div>
