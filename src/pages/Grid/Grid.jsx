@@ -22,7 +22,7 @@ const Grid = () => {
   return (
     <div className="grid grid-cols-4 grid-rows-[600px_200px_180px_180px_120px_230px_230px_150px_] md:grid-rows-[250px_auto] lg:grid-cols-4 lg:grid-rows-[auto_auto_200px_250px_230px]  gap-4 p-4 ">
       
-      <div className="col-span-4 md:col-span-4 md:row-span-2 lg:col-span-2 lg:row-span-2 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7 overflow-scroll ">
+      <div className="col-span-4 md:col-span-4 md:row-span-2 lg:col-span-2 lg:row-span-2 shadow-2xl border border-amber-50 rounded-2xl px-5 py-7 overflow-scroll md:overflow-hidden ">
         <HeroSection />
       </div>
 
