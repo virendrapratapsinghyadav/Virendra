@@ -1,19 +1,30 @@
 import React from 'react'
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import Data from '../../Data/Data'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import ProjectDetail from '../../components/ProjectDetails/ProjectDetail';
+import ProjectSection from '../../pages/ProjectSection/ProjectSection'
 
 const DetailPage = () => {
-
+    
     const {id} = useParams();
+    const navigate = useNavigate();
     const project = Data.find((proj)=>proj.id === id);
 
     if(!project)return <div>Project not Found</div>
 
+    const handleClick =()=>{
+      navigate('/projects');
+    }
+
+
   return (
     <div>
-      <button className='relative text-2xl'><IoArrowBackCircleOutline /></button>
+      <button
+      onClick={handleClick} 
+      className=' text-3xl'>
+        <IoArrowBackCircleOutline />
+      </button>
       <ProjectDetail {...project}/>
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { MoveUpRight } from 'lucide-react'
 
 const ProjectDetail = ({ subHeading, heading, image, duration, role, link, context, outcome }) => {
     return (
@@ -10,8 +11,8 @@ const ProjectDetail = ({ subHeading, heading, image, duration, role, link, conte
 
                     {/* Heading */}
                     <div className='flex flex-col items-center'>
-                        <div><h2 className=''>{subHeading}</h2></div>
-                        <div><h1 className='text-2xl'>{heading}</h1></div>
+                        <div><h2 className='text-xs md:text-md lg:text-xl font-semibold'>{subHeading}</h2></div>
+                        <div><h1 className='text-md md:text-xl lg:text-2xl font-bold text-center '>{heading}</h1></div>
                     </div>
 
                     {/* IMAGE */}
@@ -23,35 +24,41 @@ const ProjectDetail = ({ subHeading, heading, image, duration, role, link, conte
                     <div className='flex'>
 
                         {/* DETAILS */}
-                        <div className='w-[40%]'>
-                            <div><h1>Project Details</h1></div>
+                        <div className='w-[30%]'>
+                            <div><h1 className='text-xs md:text-md lg:text-xl font-bold '>Project Details</h1></div>
 
                             <div>
                                 {/* Duration */}
                                 <div>
-                                    <p>Duration</p>
-                                    <p>{duration}</p>
+                                    <p className='text-xs md:text-md lg:text-xl font-semibold'>Duration</p>
+                                    <p className='text-xs md:text-md lg:text-lg text-[#6f888c]'>
+                                        {duration}
+                                    </p>
                                 </div>
 
                                 {/* Role */}
                                 <div>
-                                    <p>Role</p>
-                                    <p>{role}</p>
+                                    <p className='text-xs md:text-md lg:text-xl font-semibold'>Role</p>
+                                    <p className='text-xs md:text-md lg:text-lg text-[#6f888c]'>
+                                        {role}
+                                    </p>
                                 </div>
                             </div>
 
                         </div>
 
                         {/* CONTEXT */}
-                        <div className='w-[50%'>
+                        <div className='w-[70%]'>
                             {/* heading */}
                             <div>
-                                <h1>Project Context</h1>
+                                <h1 className='text-xs md:text-md lg:text-xl font-bold' >Project Context</h1>
                             </div>
 
                             {/* description */}
                             <div>
-                                <p>{context}</p>
+                                <p className='text-xs md:text-md lg:text-lg  text-[#6f888c]'>
+                                    {context}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -59,18 +66,30 @@ const ProjectDetail = ({ subHeading, heading, image, duration, role, link, conte
                     {/* PROJECT OUTCOME */}
                     <div>
                         {/* heading */}
-                        <div><h1>Project Outcome</h1></div>
+                        <div><h1 className='text-xs md:text-md lg:text-xl font-bold' >Project Outcome</h1></div>
 
                         {/* content */}
                         <div>
-                            <p>{outcome}</p>
+                            <p className='text-xs md:text-md lg:text-lg text-[#6f888c]' >{outcome}</p>
                         </div>
                     </div>
 
                     {/* Link */}
-                    <div>
-                        <Link to={link}>visit live site</Link>
+                    <div className='flex gap-2'>
+                        <Link to={link}>
+                    <div className='flex p-1 gap-2 items-center rounded-2xl group hover:bg-blue-400 hover:text-black'>
+                        <div><p className='text-xs md:text-md lg:text-lg text-blue-400 font-semibold group-hover:text-black'>visit live site</p></div>
+                        <div><MoveUpRight className="w-4 h-4 border rounded-3xl bg-white rotate-0 transition-transform duration-300 group-hover:rotate-45"/></div>
                     </div>
+                    </Link>
+                    <Link to={link}>
+                    <div className='flex p-1 gap-2 items-center rounded-2xl group hover:bg-blue-400 hover:text-black' >
+                        <div><p className='text-xs md:text-md lg:text-lg text-blue-400 font-semibold group-hover:text-black'>visit github repo</p></div>
+                        <div><MoveUpRight className="w-4 h-4 border rounded-3xl bg-white rotate-0 transition-transform duration-300 group-hover:rotate-45"/></div>
+                    </div>
+                    </Link>
+                    </div>
+
                 </div>
             </div>
         </div>

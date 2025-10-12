@@ -12,16 +12,16 @@ const Card1 = ({name, img1, img2}) => {
                     <span className='text-[rgb(107,107,115)]'>{name}</span>
                 </div>
 
-                <div className='flex gap-2  overflow-y-hidden group-hover:gap-5 transition-all duration-300'>
+                <div className='flex gap-2 overflow-hidden group-hover:gap-5 transition-all duration-300 md:group-hover:gap-2'>
                     {/* image1 */}
                 <div >
-                    <img className=' translate-y-15  rounded-md 
+                    <img className='translate-y-20  rounded-md 
                      group-hover:translate-y-5 transition-transform duration-200 rotate-3 group-hover:rotate-0' src={img1} alt="" />
                 </div>
 
                 {/* image2 */}
                 <div >
-                    <img className='translate-y-20  rounded-md 
+                    <img className='translate-y-28  rounded-md 
                     group-hover:translate-y-7 transition-transform duration-200 -rotate-7 group-hover:rotate-0' src={img2} alt="" />
                 </div>
                 </div>

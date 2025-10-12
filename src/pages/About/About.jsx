@@ -67,7 +67,7 @@ const About = () => {
             </div>
 
             {/* Information */}
-            <div className='p-3 mb-2'>
+            <div className='p-3 mb-2 '>
                 <p className='my-1'>I’m a curious developer who loves turning ideas into web apps. My journey started with small coding problems and a lot of tutorials, but every project I built—whether it’s a weather app, a Trello-style board, or an image gallery—pushed me a step closer to becoming a real builder.</p>
                 <p className='my-1'>Right now, I’m sharpening my frontend skills, experimenting with backend features, and trying to level up as a full-stack dev. I’m not an expert (yet), but I enjoy figuring things out, breaking stuff, and learning along the way.</p>
                 <p className='my-1'>When I’m not coding, I’m probably geeking out on new tech tools, or just vibing with music.</p>
@@ -125,7 +125,7 @@ const About = () => {
                         <p>Read my entire CV</p>
                         </div>
                         <div>
-                            <MoveUpRight className="w-4 h-4 border rounded-3xl bg-white rotate-0 transition-transform duration-300 group-hover:rotate-45 group-hover:"/>
+                            <MoveUpRight className="w-4 h-4 border rounded-3xl bg-white rotate-0 transition-transform duration-300 group-hover:rotate-45"/>
                         </div>
                     </div>
                 </a>

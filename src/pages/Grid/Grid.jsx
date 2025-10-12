@@ -38,7 +38,7 @@ const Grid = () => {
         <BlogPreview />
       </div>
 
-      <div className="col-span-4 md:col-span-2 lg:col-span-2 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden">
+      <div className="col-span-4 md:col-span-2 lg:col-span-2 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden ">
         <Card1 name = {"Paste Info"} img1 ={pasteAll} img2 ={pasteHome}/>
       </div>
 
