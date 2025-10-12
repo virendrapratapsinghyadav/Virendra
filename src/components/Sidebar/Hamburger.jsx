@@ -61,7 +61,9 @@ const Hamburger = ({closeMenu}) => {
                             </button>
                         </div>
                         <div>
-                            <button className="w-full px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-800 cursor-pointer">
+                            <button 
+                            onClick={()=>{window.location.href ='mailto:narveer@gmail.com'}}
+                            className="w-full px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-800 cursor-pointer">
                                 Contact Me
                             </button>
                         </div>
