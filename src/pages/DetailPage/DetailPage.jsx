@@ -22,7 +22,7 @@ const DetailPage = () => {
     <div>
       <button
       onClick={handleClick} 
-      className=' text-3xl'>
+      className=' text-3xl cursor-pointer rounded-3xl hover:bg-red-400 '>
         <IoArrowBackCircleOutline />
       </button>
       <ProjectDetail {...project}/>

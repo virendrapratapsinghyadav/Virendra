@@ -63,12 +63,14 @@ const LeftSide = () => {
                         <div>
                             <button
                             onClick={()=>{window.open('https://drive.google.com/file/d/1K1jZKSsUcyyou-2iJd_p_Xuk3WkyzGjj/view','_blank')}}
-                            className="w-full px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-100">
+                            className="w-full px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 cursor-pointer">
                                 Read my CV
                             </button>
                         </div>
                         <div>
-                            <button className="w-full px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-800">
+                            <button  
+                            onClick={()=>{window.location.href = 'mailto:narveer019@gmail.com'}}
+                            className="w-full px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-800 cursor-pointer">
                                 Contact Me
                             </button>
                         </div>

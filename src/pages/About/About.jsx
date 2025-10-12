@@ -61,7 +61,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className=''>
+                <div className='cursor-pointer' onClick={()=>{window.location.href = "mailto:narveer019@gmail.com"}}>
                     <Btn icon={PlaneTakeoff} label={"Send me an Email"}/>
                 </div>
             </div>

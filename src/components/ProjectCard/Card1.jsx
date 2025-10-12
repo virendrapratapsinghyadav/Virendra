@@ -1,18 +1,26 @@
 import React from 'react'
 import movie1 from  '../../assets/images/movie1.png';
 import movie2 from  '../../assets/images/movie2.png';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Card1 = ({name, img1, img2}) => {
+const Card1 = ({id, name, img1, img2}) => {
+
+    const navigate = useNavigate();
+
+    const handleClick=()=>{
+        navigate(`/project/${id}`)
+    }
+
     return (
-        <div>
-            <a className='cursor-pointer group'>
+        <div onClick={handleClick}>
+            <Link className='cursor-pointer group'>
                 {/* heading */}
                 <div>
                     <span className='text-blue-400'>ReactsJs Case Study : </span>
                     <span className='text-[rgb(107,107,115)]'>{name}</span>
                 </div>
 
-                <div className='flex gap-2 overflow-hidden group-hover:gap-5 transition-all duration-300 md:group-hover:gap-2'>
+                <div className=' flex justify-center gap-2 overflow-hidden group-hover:gap-5 transition-all duration-300 md:group-hover:gap-2'>
                     {/* image1 */}
                 <div >
                     <img className='translate-y-10 lg:translate-y-20  rounded-md 
@@ -25,7 +33,7 @@ const Card1 = ({name, img1, img2}) => {
                     group-hover:translate-y-7 transition-transform duration-200 -rotate-7 group-hover:rotate-0' src={img2} alt="" />
                 </div>
                 </div>
-            </a>
+            </Link>
         </div>
     )
 }

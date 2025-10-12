@@ -48,8 +48,8 @@ const Layout = () => {
                 <h1 className="text-2xl font-bold">Virendra</h1>
                 <p className="text-gray-600 text-xl">Software Developer</p>
               </div>
-              <div className="text-4xl">
-                <GiHamburgerMenu onClick={() => setIsOpen(true)} />
+              <div className="text-4xl cursor-pointer">
+                <GiHamburgerMenu  onClick={() => setIsOpen(true)} />
               </div>
             </div>
 
@@ -61,7 +61,7 @@ const Layout = () => {
         ) : (
           <div className="flex justify-between">
             {renderHamburger()}
-            <div className=" mx-5 mt-6 h-fit border-2 bg-amber-300 rounded-3xl  border-red-500 text-4xl">
+            <div className=" mx-5 mt-6 h-fit border-2 bg-amber-300 rounded-3xl  border-red-500 text-4xl cursor-pointer">
               <IoClose onClick={() => setIsOpen(false)} />
             </div>
           </div>
