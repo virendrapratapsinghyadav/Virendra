@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoLocationSharp, IoBulb} from "react-icons/io5";
+import { FaTools } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
 const HeroSection = () => {
@@ -14,9 +15,18 @@ const HeroSection = () => {
                     <div><IoLocationSharp /></div>
                     <div><p className='font-bold text-gray-800 font-mono text-shadow-2xs'>Kanpur</p></div>
                 </div>
-                <div className=' text-[rgb(107,107,115)] inline-flex items-center rounded-2xl bg-gray-200 text-xs px-2 py-0.5 gap-1'>
+                
+
+                {/* experience display btn */}
+                {/* <div className=' text-[rgb(107,107,115)] inline-flex items-center rounded-2xl bg-gray-200 text-xs px-2 py-0.5 gap-1'>
                     <div><IoBulb /></div>
                     <div><p className='font-bold text-gray-800 font-mono text-shadow-2xs'>2+ years of experience</p></div>
+                </div> */}
+
+                {/* display btn */}
+                <div className=' text-[rgb(107,107,115)] inline-flex items-center rounded-2xl bg-gray-200 text-xs px-2 py-0.5 gap-1'>
+                    <div><FaTools/></div>
+                    <div><p className='font-bold text-gray-800 font-mono text-shadow-2xs'>Self-Taught Developer</p></div>
                 </div>
             </div>
         </div>
@@ -43,7 +53,7 @@ const HeroSection = () => {
             <div className=' text-[rgb(107,107,115)] inline-flex items-center rounded-2xl bg-gray-200 text-xs px-2 py-0.5'>
                 <div><AiFillGithub /></div>
                 <div>
-                    <button>MovieApp</button>
+                    <button>Trello</button>
                 </div>
             </div>
         </div>

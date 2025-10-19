@@ -7,10 +7,10 @@ const BlogPreview = () => {
         {/* top */}
         <div>
             <div>
-                <h1>Read my thoughts on my Development Journey</h1>
+                <h1 className='text-xl font-bold'>🚧 Website Under Construction</h1>
             </div>
             <div>
-                Exploring things...
+                Please check back soon or feel free to contact me in the meantime.
             </div>
         </div>
 
@@ -21,7 +21,7 @@ const BlogPreview = () => {
 
         {/* end */}
         <div>
-            (It's free!)
+            (Thank you for visiting!)
         </div>
       </div>
     </div>

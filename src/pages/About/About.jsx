@@ -56,7 +56,7 @@ const About = () => {
                         <img src={profile} alt="" className='h-[64px] w-[64px] m-2 rounded-2xl'/>
                     </div>
                     <div  className=''>
-                        <p className='text-blue-500 text-center lg:text-start'>A Software developer with 2+years experience</p>
+                        <p className='text-blue-500 text-center lg:text-start'>A Self-Taught Software Developer</p>
                         <h1 className='text-md font-bold text-center lg:text-start lg:text-xl'>Hi, I’m Virendra Pratap Singh Yadav </h1>
                     </div>
                 </div>
