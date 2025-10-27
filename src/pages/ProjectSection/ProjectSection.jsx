@@ -3,6 +3,7 @@ import Card2 from '../../components/ProjectCard/Card2'
 import p1 from '../../assets/images/p1.avif'
 import p2 from '../../assets/images/p2.avif'
 import p3 from '../../assets/images/p3.avif'
+import ThinkCreate from '../../assets/images/ThinkCreate.png'
 import github from '../../assets/images/github.jpeg'
 import { Link } from 'react-router-dom'
 
@@ -20,7 +21,7 @@ const ProjectSection = () => {
     },
     {
       id: '2',
-      icon: p2,
+      icon: ThinkCreate,
       heading: "Converting an underperforming online store to a selling powerhouse",
       description: "Cheil is a digital agency owned by Samsung Group. During my time there as a graduate, I was on the conversion rate optimisation (CRO) team focusing on improving samsung.com/au. My role was user experience graduate where I would work closely with the team to research insights based on data, heuristic principles and competitors. With these insights, I would design modifications to the site, hand off designs to developers and then run an A/B test to determine if our hypothesise were accurate.",
     },
