@@ -45,7 +45,7 @@ const Grid = () => {
       </div>
 
       <div className="col-span-4 md:col-span-2 lg:col-span-2 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden ">
-        <Card1 id={1}  name = {"Paste Info"} img1 ={ThinkHome} img2 ={ThinkCreate}/>
+        <Card1 id={2}  name = {"Paste Info"} img1 ={ThinkHome} img2 ={ThinkCreate}/>
       </div>
 
       <div className=" col-span-4 md:col-span-2 lg:col-span-1 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl">
@@ -61,7 +61,7 @@ const Grid = () => {
       </div>
 
       <div className="col-span-4 h-[250px] lg:col-span-2 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden">
-        <Card1 id={2} name = {"Movies App for entertainment"} img1 ={movie1} img2 ={movie2}/>
+        <Card1 id={3} name = {"Movies App for entertainment"} img1 ={movie1} img2 ={movie2}/>
       </div>
 
       <div className="hidden col-span-4 lg:block lg:col-span-4 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl  py-1 pb-1 px-2">
