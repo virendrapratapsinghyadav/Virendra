@@ -12,11 +12,17 @@ import Card2 from '../../components/ProjectCard/Card2'
 import ProjectSection from '../ProjectSection/ProjectSection'
 import DancePlayer from '../../components/Music/DancePlayer'
 import Leetcode from '../../components/Leetcode/Leetcode'
+
+//MOVIEd
 import movie1 from '../../assets/images/movie1.png'
 import movie2 from '../../assets/images/movie2.png'
+
+//PASTE-APP
 import pasteHome from '../../assets/images/paste-home.png'
 import pasteAll from '../../assets/images/allPaste.png'
 import viewPaste from '../../assets/images/Viewpaste.png'
+
+//THINKBOARD
 import ThinkHome from '../../assets/images/ThinkHome.png'
 import ThinkCreate from '../../assets/images/ThinkCreate.png'
 import ThinkUpdate from '../../assets/images/ThinkUpdate.png'
@@ -45,7 +51,7 @@ const Grid = () => {
       </div>
 
       <div className="col-span-4 md:col-span-2 lg:col-span-2 shadow-2xl border border-amber-50 rounded-2xl px-10 py-5 overflow-hidden ">
-        <Card1 id={2}  name = {"Paste Info"} img1 ={ThinkHome} img2 ={ThinkCreate}/>
+        <Card1 id={2}  name = {"Think Board"} img1 ={ThinkHome} img2 ={ThinkCreate}/>
       </div>
 
       <div className=" col-span-4 md:col-span-2 lg:col-span-1 lg:row-span-1 shadow-2xl border border-amber-50 rounded-2xl">

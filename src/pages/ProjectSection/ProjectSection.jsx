@@ -1,25 +1,28 @@
 import React from "react";
 import Card2 from "../../components/ProjectCard/Card2";
-import p1 from "../../assets/images/p1.avif";
+import dailyWage from "../../assets/images/dailyWage.jpg";
 import p2 from "../../assets/images/p2.avif";
 import p3 from "../../assets/images/p3.avif";
+
+import lgThink from "../../assets/images/lgThink.jpg"; 
 import ThinkCreate from "../../assets/images/ThinkCreate.png";
-import movieHome from "../../assets/images/movieHome.png"
 import github from "../../assets/images/github.jpeg";
+import movieEx from '../../assets/images/movieEx.jpg';
+
 import { Link } from "react-router-dom";
 
 const ProjectSection = () => {
   const ProjectList = [
     {
       id: "1",
-      icon: p1,
-      heading: "Revolutionising WhatsApp Collaboration with Meetup",
+      icon: dailyWage,
+      heading: "Revolutionising Living with Daily Wage Support Where It Counts",
       description:
         "During my time at university, I was challenged to enhance the collaborative features within WhatsApp. After considering multiple solutions, Meetup for WhatsApp was born. This project aims to seamlessly integrate event planning functionality through Meetup. Rooted in extensive user research, persona development, and iterative design processes, Meetup seeks to address common pain points such as difficulty organising group plans and finding crucial information within chat threads. By adhering to WhatsApp's design guidelines and maintaining cohesion with its interface, I endeavoured to redefine the user experience, empowering individuals to effortlessly coordinate gatherings while enhancing the platform's utility and appeal.",
     },
     {
       id: "2",
-      icon: ThinkCreate,
+      icon: lgThink,
       heading:
         "Transform Simple Notes into Powerful Productivity — Built with Text CRUD Operations, Responsive UI, and Scalable Architecture.",
       description:
@@ -27,7 +30,7 @@ const ProjectSection = () => {
     },
     {
       id: "3",
-      icon: movieHome,
+      icon: movieEx,
       heading: "Your Gateway to the Movie Universe — Browse Popular, Top-Rated, and Favorite Films with a Sleek Interface.",
       description: `This project is a React.js-based Movie App designed to display information about popular, top-rated, and favorite movies.
                     Movie data is fetched dynamically using the Fetch API, and each movie card provides an interactive experience powered by React Router for smooth navigation between pages.`,

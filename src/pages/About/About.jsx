@@ -2,10 +2,14 @@ import React from 'react'
 import Experience from '../../components/experiences/Experience'
 import Btn from '../../components/NonBtn/Btn'
 import profile from '../../assets/profile.png'
-import visibuild from '../../assets/images/pasteApp-logo.png'
-import cheil from '../../assets/images/sparkboard-logo.png'
+
+//Project Experience
+import lgThink from "../../assets/images/lgThink.jpg";
+import dailyWage from '../../assets/images/dailyWage.jpg'
 import bmc from '../../assets/images/DC.png'
-import schoolofrock from '../../assets/images/movieInfo-logo.png'
+import movieEx  from '../../assets/images/movieEx.jpg'
+
+//Education
 import galgotia from '../../assets/images/galgotia.jpg'
 import bethel from '../../assets/images/BethelAcademy.png'
 import maharishi from '../../assets/images/MaharishiVidyaMandir.jpg'
@@ -28,10 +32,10 @@ const About = () => {
     ]
 
     const ExperienceList = [
-        {icon:visibuild, company:"ReactJs, Redux, TailwindCSS, MongoDB, NodeJs, ExpressJs, Cloudinary", role:"Paste App", present:"", duration:"2024-present"},
-        {icon:cheil, company:"OpenAI GPT-4 API, MongoDB, NodeJs, ExpressJs", role:"SparkBoard", present:"", duration:""},
+        {icon:lgThink, company:"ReactJs, TailwindCSS, MongoDB, NodeJs, ExpressJs, Cloudinary", role:"Think Board", present:"", duration:"2024-present"},
+        {icon:dailyWage, company:"OpenAI GPT-4 API, MongoDB, NodeJs, ExpressJs", role:"Daily Wage", present:"", duration:""},
         {icon:bmc, company:"Frontend, Backend", role:"Developer Community App", present:"", duration:""},
-        {icon:schoolofrock, company:"ReactJs, TailwindCSS, Axios", role:"MovieInfo", present:"", duration:""},
+        {icon:movieEx, company:"ReactJs, TailwindCSS, Axios", role:"Movie Explorer", present:"", duration:""},
     ]
 
     const EducationList = [
