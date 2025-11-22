@@ -27,23 +27,23 @@ const About = () => {
     ]
 
     const specialisingTags = [
-        {icon: Grid, label:"C++"},
-        {icon: Grid, label:"JavaScript(ES6+)"},
-        {icon: Grid, label:"HTML5/CSS3"},
+        { label:"C++"},
+        {label:"JavaScript(ES6+)"},
+        { label:"HTML5/CSS3"},
+        { label:"MySQL"},
     ]
     const Technologies = [
-        {icon: Library, label:"ReactJs"},
-        {icon: Library, label:"NodeJs"},
-        {icon: Library, label:"ExpressJs"},
-        {icon: Library, label:"TailwindCSS"},
-        {icon: Library, label:"Zustand"},
+        { label:"ReactJs"},
+        { label:"NodeJs"},
+        { label:"ExpressJs"},
+        { label:"MongoDB"},
     ]
 
     const Tools = [
-        {icon: Layers, label:"MongoDB"},
-        {icon: Layers, label:"MySQL"},
-        {icon: GitMerge, label:"Git/GitHub"},
-        {icon: Grid, label:"Postman"},
+        { label:"Zustand"},
+        { label:"TailwindCSS"},
+        { label:"Git/GitHub"},
+        { label:"Postman"},
     ]
 
     const ExperienceList = [
@@ -87,8 +87,8 @@ const About = () => {
 
             {/* Information */}
             <div className='p-3 mb-2 '>
-                <p className='my-1'>I’m a curious developer who loves turning ideas into web apps. My journey started with small coding problems and a lot of tutorials, but every project I built—whether it’s a weather app, a Trello-style board, or an image gallery—pushed me a step closer to becoming a real builder.</p>
-                <p className='my-1'>Right now, I’m sharpening my frontend skills, experimenting with backend features, and trying to level up as a full-stack dev. I’m not an expert (yet), but I enjoy figuring things out, breaking stuff, and learning along the way.</p>
+                <p className='my-1'>I’m a full-stack developer with a passion for turning ideas into web applications. Since starting my journey with small coding challenges and tutorials, I’ve built projects like Gupshup (real-time chat app), a Trello-style board, and an image gallery, which have strengthened my skills in frontend and backend development, API integration, and responsive design.</p>
+                <p className='my-1'>I’m actively enhancing my problem-solving and coding skills through DSA and hands-on projects, preparing to contribute effectively in entry-level/full-stack developer roles. I enjoy learning new technologies, tackling challenges, and building applications that deliver real value to users.</p>
                 
             </div>
             <hr className='border-t border-gray-300 opacity-30' />
@@ -109,30 +109,22 @@ const About = () => {
             
             {/* Specialising in: */}
             <div className='p-3 mb-2'>
-                <div className='text-xl'><h1>Specialising in: </h1></div>
-                <div className='flex flex-col gap-2 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-10'>
+                <div className='text-xl'><h1>Tech Stack</h1></div>
+                <div className='flex flex-col gap-1 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-1'>
                     {
                         specialisingTags.map((tag, index)=>{
                             return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
                         })
                     }
                 </div>
-            </div>
-            {/* Technologies/Frameworks: */}
-            <div className='p-3 mb-2'>
-                <div className='text-xl'><h1>Technologies/Frameworks: </h1></div>
-                <div className='flex flex-col gap-2 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-10'>
+                <div className='flex flex-col gap-2 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-2'>
                     {
                         Technologies.map((tag, index)=>{
                             return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
                         })
                     }
                 </div>
-            </div>
-            {/* Databasea and Tools: */}
-            <div className='p-3 mb-2'>
-                <div className='text-xl'><h1>Databases and Tools: </h1></div>
-                <div className='flex flex-col gap-2 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-10'>
+                <div className='flex flex-col gap-2 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-2'>
                     {
                         Tools.map((tag, index)=>{
                             return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
