@@ -3,6 +3,7 @@ import Experience from '../../components/experiences/Experience'
 import Btn from '../../components/NonBtn/Btn'
 import profile from '../../assets/profile.png'
 
+
 //Project Experience
 import lgThink from "../../assets/images/lgThink.jpg";
 import dailyWage from '../../assets/images/dailyWage.jpg'
@@ -13,11 +14,10 @@ import movieEx  from '../../assets/images/movieEx.jpg'
 import galgotia from '../../assets/images/galgotia.jpg'
 import bethel from '../../assets/images/BethelAcademy.png'
 import maharishi from '../../assets/images/MaharishiVidyaMandir.jpg'
-import {PlaneTakeoff, MapPin, Briefcase, Plane, MoveUpRight, FileText, Layers, Smartphone, Grid } from "lucide-react";
+import {PlaneTakeoff, GitMerge, Library, MapPin, Briefcase, Plane, MoveUpRight, FileText, Layers, Smartphone, Grid } from "lucide-react";
 
 
 const About = () => {
-
 
 
     const summaryTags = [
@@ -27,8 +27,23 @@ const About = () => {
     ]
 
     const specialisingTags = [
-        {icon: Layers, label:"Problem Solving"},
-        {icon: Grid, label:"Web Apps"},
+        {icon: Grid, label:"C++"},
+        {icon: Grid, label:"JavaScript(ES6+)"},
+        {icon: Grid, label:"HTML5/CSS3"},
+    ]
+    const Technologies = [
+        {icon: Library, label:"ReactJs"},
+        {icon: Library, label:"NodeJs"},
+        {icon: Library, label:"ExpressJs"},
+        {icon: Library, label:"TailwindCSS"},
+        {icon: Library, label:"Zustand"},
+    ]
+
+    const Tools = [
+        {icon: Layers, label:"MongoDB"},
+        {icon: Layers, label:"MySQL"},
+        {icon: GitMerge, label:"Git/GitHub"},
+        {icon: Grid, label:"Postman"},
     ]
 
     const ExperienceList = [
@@ -74,7 +89,7 @@ const About = () => {
             <div className='p-3 mb-2 '>
                 <p className='my-1'>I’m a curious developer who loves turning ideas into web apps. My journey started with small coding problems and a lot of tutorials, but every project I built—whether it’s a weather app, a Trello-style board, or an image gallery—pushed me a step closer to becoming a real builder.</p>
                 <p className='my-1'>Right now, I’m sharpening my frontend skills, experimenting with backend features, and trying to level up as a full-stack dev. I’m not an expert (yet), but I enjoy figuring things out, breaking stuff, and learning along the way.</p>
-                <p className='my-1'>When I’m not coding, I’m probably geeking out on new tech tools, or just vibing with music.</p>
+                
             </div>
             <hr className='border-t border-gray-300 opacity-30' />
 
@@ -91,6 +106,7 @@ const About = () => {
             </div>
             <hr className='border-t border-gray-300 opacity-30' />
             
+            
             {/* Specialising in: */}
             <div className='p-3 mb-2'>
                 <div className='text-xl'><h1>Specialising in: </h1></div>
@@ -102,6 +118,29 @@ const About = () => {
                     }
                 </div>
             </div>
+            {/* Technologies/Frameworks: */}
+            <div className='p-3 mb-2'>
+                <div className='text-xl'><h1>Technologies/Frameworks: </h1></div>
+                <div className='flex flex-col gap-2 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-10'>
+                    {
+                        Technologies.map((tag, index)=>{
+                            return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
+                        })
+                    }
+                </div>
+            </div>
+            {/* Databasea and Tools: */}
+            <div className='p-3 mb-2'>
+                <div className='text-xl'><h1>Databases and Tools: </h1></div>
+                <div className='flex flex-col gap-2 w-fit mt-2 lg:flex-row lg:mt-1 lg:gap-10'>
+                    {
+                        Tools.map((tag, index)=>{
+                            return(<Btn key={index} icon={tag.icon} label={tag.label}/>)
+                        })
+                    }
+                </div>
+            </div>
+
             <hr className='border-t border-gray-300 opacity-30' />
 
             {/* Experience */}

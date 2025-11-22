@@ -61,7 +61,7 @@ const ProjectDetail = ({
                 {/* Role */}
                 <div>
                   <p className="text-xs md:text-md lg:text-xl font-semibold">
-                    Role
+                    Technologies
                   </p>
                   <p className="text-xs md:text-md lg:text-lg text-[#6f888c]">
                     {role}

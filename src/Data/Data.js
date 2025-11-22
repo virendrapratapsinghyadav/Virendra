@@ -48,7 +48,7 @@ const Data = [
     subHeading: "ThinkBoard",
     image: ThinkCreate,
     duration: "2 Weeks",
-    role: "FullStack Developer",
+    role: "ReactJs, NodeJs, ExpressJs, MongoDB, TailwindCSS, Axios",
     link1: "https://thinkboard-uf3o.onrender.com/",
     link2: "https://github.com/virendrapratapsinghyadav/ThinkBoard",
     context:
@@ -102,7 +102,7 @@ const Data = [
     subHeading: "Movie Explorer App",
     image: movieHome,
     duration: "2 Weeks",
-    role: "Reactjs Developer",
+    role: "ReactJs, TailwindCSS, Fetch API, React-Skeleton",
     link1: "https://github.com/virendrapratapsinghyadav/MoviesD",
     link2: "https://github.com/virendrapratapsinghyadav/MoviesD",
     context: `This project is a React.js-based Movie App designed to display information about popular, top-rated, and favorite movies.

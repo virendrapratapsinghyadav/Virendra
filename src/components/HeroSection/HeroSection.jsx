@@ -44,7 +44,7 @@ const HeroSection = () => {
         <div className='text-[rgb(107,107,115)] text-base space-y-2 pb-1'>
             <p className=''>I’m a Computer Science graduate diving into the full-stack world—JavaScript, React, Node.js, and everything in between. I enjoy taking ideas from scratch and shaping them into interactive apps.</p>
             <p className=''>Currently, I’m leveling up my problem-solving skills through DSA, learning and practicing on my own to build a strong foundation before stepping into the professional world.</p>
-            <p className=''>My focus is on building experiences that move that needle and drive business outcomes. Click around and enjoy my corner of the internet!</p>
+            <p className=''>My focus is on building experiences that move that needle and drive business outcomes. Explore my projects to see the solutions I’ve built.</p>
         </div>
 
         {/* footer */}
